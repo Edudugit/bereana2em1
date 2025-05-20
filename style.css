@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+*{
+  box-sizing: border-box;
+}
+
+.titulo-com-imagem{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
+.container{
+   max-width: 1040px;   /* ou 90%, ou o tamanho que quiser */
+    margin: 0 auto;      /* centraliza horizontalmente */
+    padding: 0 20px;     /* espaço interno opcional */ 
+}
+
+header{
+    background-image: linear-gradient(black,border-bottom-left-radius);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+   
+}
+
+header > h1{
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.256);
+}
+
+header > p {
+    color: rgb(248, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    max-width: 400px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0,0,0, 0.342);
+    padding: 10px 5px;
+}
+
+nav{
+    background-color: #e40e41; /*  para dar contraste */
+    padding: 10px 0;
+    box-shadow: 0px 7px 7px black;
+    display: flex;
+    justify-content: center;/* centraliza horizontalmente */
+    gap: 20px; /* espaço entre os links */
+}
+
+nav>a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+nav>a:hover{
+    color: rgb(0, 7, 12);;
+    background-color: rgba(116, 67, 75, 0.521);
+    border-radius: 10px;
+}
+h1{
+    background-color: #e40e41;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align:left
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.256);
+    padding: 10px 5px;
+    width: 100%; /* largura do h1 */
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+h2{
+    background-color: #e40e41;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-bottom: 30px;/* espaço entre os h2 */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.256);
+    padding: 10px 5px;
+    width: 100%; /* largura do h1 */
+    border-radius: 10px;
+}
+.footer{
+    background-color: #e40e41;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 7px 7px black;
+}
+
+body{
+    background-image: url(imagens/mayur-gala-2PODhmrvLik-unsplash.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.curso{
+    background-color: rgba(255, 255, 255, 0.466);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.413);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px; /* espaço entre os cursos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.466);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.413);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img{
+    width: 100%;
+}
+
+main p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 10px; /* espaço entre os parágrafos */
+}
+.carrossel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border: 4px solid #e6005c;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.carrossel-wrapper {
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  gap: 20px;
+  animation: rolar 20s linear infinite;
+}
+
+.carrossel img {
+  height: 150px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e6005c;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animação */
+@keyframes rolar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 10px 5px;
+  }
+}
+
+
+
+footer {
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+            text-align: center;
+            padding: 20px;
+            background: #333 #282f28;
+            color: white;
+        }/* Estilo para o rodapé */
+

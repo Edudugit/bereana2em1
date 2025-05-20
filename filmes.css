@@ -1,0 +1,156 @@
+@charset "UTF-8";
+* {
+    
+    box-sizing: border-box;
+}
+
+.titulo-com-imagem {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container {
+    max-width: 1040px;   
+    margin: 0 auto;      
+    padding: 0 20px;     
+}
+
+body {
+    background-image: url(imagens/mayur-gala-2PODhmrvLik-unsplash.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: #e40e41;
+    padding: 10px 0;
+    box-shadow: 0px 7px 7px black;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav > a:hover {
+    color: rgb(0, 7, 12);
+    background-color: rgba(116, 67, 75, 0.521);
+    border-radius: 10px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.466);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.413);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: white;
+    border-bottom: white solid 1px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.445);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.256);
+    padding: 10px 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Novo estilo para os blocos dos filmes */
+.filme1, .filme2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* texto em cima, botão embaixo */
+    min-height: 300px; /* dá espaço suficiente para texto + botão */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filme2 {
+    text-align: left; /* para deixar texto alinhado igual filme1 */
+}
+
+/* Ajusta o parágrafo dentro do filme para ter espaçamento */
+.filme1 p, .filme2 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Botão estilizado para os dois filmes */
+.btn1, .btn2 {
+    align-self: flex-end; /* botão alinhado no canto direito */
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: #333 #282f28;
+    color: white;
+}
+
+img {
+  max-width: 100%;   /* garante que a imagem não ultrapasse o tamanho do contêiner */
+  height: auto;/* mantém a proporção da imagem */
+}
+
+/* Animação */
+@keyframes rolar {/* animação para o carrossel */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} 
+
+@media (max-width: 600px) { /* Estilos para telas menores */
+  h1, h2 {
+    width: 100%; /* ocupa toda a largura */
+    font-size: 1.3em; /* tamanho da fonte reduzido */
+    padding: 10px 5px; /* espaçamento reduzido */
+  }
+}
+
